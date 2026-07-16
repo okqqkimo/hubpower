@@ -345,11 +345,17 @@ SpaceX(Space Exploration Technologies Corp.)在相位陣列/波束成形上的�
 
 ## 13. 專利清單(SpaceX / Space Exploration Technologies Corp.)
 
-> 背景:SpaceX 自 **2016 年**起針對 Starlink 天線佈局專利。截至 2020-09-24,已有
-> **28 件公開**(3 件美國核發、9 件美國待審、9 件 PCT、7 件台灣申請)。以下為與
-> **使用者終端相位陣列**最相關的代表項目。
+> **⚠️ 規模更正**:先前版本只列了「相位陣列波束成形」一小類,容易低估。實際上 SpaceX
+> 的專利組合大得多,以下先給總量,再列使用者終端/天線相關的擴充清單。
 
-**核心專利族:相位陣列 / 波束成形**
+**組合總量(第三方統計,口徑不同)**
+- **全球約 416–515 件專利**,歸屬 **約 125 個專利族**,**約 273 件仍有效**。
+- **USPTO**:約 **130 件申請、~85 件核發**,核准率 **95.51%**。
+- SpaceX 歷史上**大量倚賴營業秘密**(火箭核心少申請專利);**Starlink 商業化後才在
+  天線 / 衛星通訊 / 使用者終端領域加大申請**(2016 年起)。截至 2020-09-24 曾統計為
+  28 件公開(3 美國核發、9 美國待審、9 PCT、7 台灣),此後**持續大幅增加**。
+
+**核心專利族:相位陣列 / 波束成形(使用者終端最核心)**
 
 | 專利號 | 類型 | 標題 | 重點 |
 |---|---|---|---|
@@ -363,6 +369,28 @@ SpaceX(Space Exploration Technologies Corp.)在相位陣列/波束成形上的�
 
 **主張的技術優勢**:能效、頻寬、輕量化、**製造簡化**;對應「同時追蹤星座衛星與地面
 單元」的工程挑戰(陣列結構、訊號路由、波束成形/定向)。
+
+**擴充清單:其他天線 / 使用者終端 / 通訊相關(核發專利,USPTO 全文 PDF)**
+
+| 專利號 | 標題 | 主題 |
+|---|---|---|
+| **US 11,056,801 B2** | Antenna Aperture in Phased Array Antenna Systems | 天線口徑(同族早期核發) |
+| **US 10,574,337 B2** | LEO Constellation Satellite Terminal | LEO 星座地面終端 |
+| **US 12,034,517 B2** | LEO Constellation Satellite Terminal | 終端(後續核發) |
+| **US 11,489,252 B2** | System and Method for Over-the-Air Antenna Calibration | **空中(OTA)天線校準**(對應「軟體定義校準」) |
+| **US 12,255,406 B2** | System and Method for Over-the-Air Antenna Calibration | OTA 校準(後續) |
+| **US 12,191,582 B2** | Antenna Device | 天線裝置 |
+| **US 11,923,931 B2** | System and Method for Distributed Antenna Wireless Communications | 分散式天線無線通訊 |
+| **US 11,750,275 B2** | Geolocation of RF Devices Using Spaceborne Phased Arrays | 用星載相位陣列做地面 RF 定位 |
+| **US 12,143,197 B2** | Geolocation of RF Devices Using Spaceborne Phased Arrays | 同上(後續) |
+| **US 12,015,472 B2** | Interplanetary Networks for Space Internet and Space Positioning | 太空網路/定位 |
+| **US 12,316,433 B2** | System for Grant-Free Transmissions | 免授權(grant-free)上行傳輸 |
+| **US 10,367,254 B2** | Space-Based Tethered Communications Antenna Array | 太空繫留天線陣列 |
+
+> 說明:上表為**與 Starlink 天線/終端/鏈路相關**的 SpaceX 核發專利抽樣(非全部),
+> 涵蓋終端硬體、OTA 校準、分散式天線、星載定位、上行接取等。USPTO PDF 入口格式:
+> `https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/<號碼>`
+> (例:`.../11489252`)。**專利號與申請公開號需分辨,法律狀態以官方為準。**
 
 **相關但非 SpaceX 本體**
 - **US2024/0405420 A1**(Justia)— "Mechanism Type Antenna for Tracking Starlink Satellite":
