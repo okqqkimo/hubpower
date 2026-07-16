@@ -321,4 +321,71 @@ SpaceX(Space Exploration Technologies Corp.)在相位陣列/波束成形上的�
 
 ---
 
+## 12. 拆解影片清單
+
+| 主題 / 世代 | 作者 | 內容重點 | 連結 |
+|---|---|---|---|
+| **Gen1 圓盤破壞式拆解**(經典) | Kenneth Keiter | 55 分鐘完整拆解 + 相位陣列與機構/電子逐段解說,iFixit 亦引用 | https://youtu.be/iOmdQnIlnRo |
+| **相位陣列 RF 深度分析** | The Signal Path(TSP #181/#183) | 相位陣列架構、RF 訊號鏈、X 光透視分析 | https://www.youtube.com/watch?v=h6MfM8EFkGg |
+| **Gen1 圖文拆解** | iFixit | SoC/波束成形/FEM/馬達/膠合、可維修性評分 | https://www.ifixit.com/Teardown/Starlink+Round+Dish+Teardown/148806 |
+| **Gen2 矩形圖文拆解** | iFixit | 矩形版更薄更輕的內部結構 | https://www.ifixit.com/Teardown/Starlink+Rectangle+Dish+Teardown/149892 |
+| **Gen2/矩形詳細拆解** | YouTube(RECTANGLE Teardown Details) | 內部高清照片、修剪成低功耗面板 | https://www.youtube.com/watch?v=AlvIWF0AXI0 |
+| **非破壞式拆解** | YouTube(Non Destructive Way) | 不切割拆開 Dishy 的方法 | https://www.youtube.com/watch?v=iqzim4wR7eE |
+| **Gen3 拆解系列 ep.03** | YouTube | REV4/Gen3 逐集拆解 | https://www.youtube.com/watch?v=samgbxEcXiQ |
+| **底座拆解** | YouTube(Disassemble Base) | 致動器/底座機構 | https://www.youtube.com/watch?v=ahIQXHqK3AA |
+| **Starlink Mini 拆解速覽** | Oleg Kutkov(X) | Catapult SoC、8 Gb RAM、2 數位波束成形器、GNSS;最低可維修性 | https://x.com/olegkutkov/status/1817929594902585421 |
+| **REV4 拆解與測試(圖文)** | Oleg Kutkov | SoC/RAM/eMMC 同 REV3、6 顆新 Shiraz、新 patch 天線 | https://olegkutkov.me/2024/02/12/starlink-terminal-revision-4-overview-and-tests/ |
+| **Dishy V3 拆解(圖文)** | Dan Murray | 與 Lennert Wouters 合作做 eMMC dump | https://danmurray.net/2022/03/19/dishy-v3-teardown/ |
+| **安全評估拆解(DEF CON 30)** | Lennert Wouters (KU Leuven) | 「Glitched on Earth by Humans」電壓毛刺 + $25 modchip 破解、韌體 dump | https://forum.defcon.org/node/241928 |
+
+> 提示:文字類拆解(iFixit / Oleg Kutkov / Dan Murray)含大量高清內部照片與晶片標記,
+> 是核對晶片型號最好的一手來源;影片類(Keiter / TSP)適合理解機構與 RF 鏈路全貌。
+
+---
+
+## 13. 專利清單(SpaceX / Space Exploration Technologies Corp.)
+
+> 背景:SpaceX 自 **2016 年**起針對 Starlink 天線佈局專利。截至 2020-09-24,已有
+> **28 件公開**(3 件美國核發、9 件美國待審、9 件 PCT、7 件台灣申請)。以下為與
+> **使用者終端相位陣列**最相關的代表項目。
+
+**核心專利族:相位陣列 / 波束成形**
+
+| 專利號 | 類型 | 標題 | 重點 |
+|---|---|---|---|
+| **US2019/0253125 A1** | 申請 | Beamformer Lattice for Phased Array Antennas | 多層結構:beamformer cell 陣列(第一層)+ 多工饋電網路 H-network(第二層)+ 天線單元(第三層);22 個 INPADOC 同族,涵蓋波束成形、self-multiplexing、訊號路由 |
+| **US 11,146,323 B2** | 核發 | Beamformer Lattice for Phased Array Antennas | 上案之核發專利 |
+| **US 11,606,134 B2** | 核發 | Beamformer Lattice for Phased Array Antennas | 同族後續核發 |
+| **US2019/0252801 A1** | 申請 | Antenna Aperture in Phased Array Antenna Systems | 天線 lattice 採**空間漸縮(space-tapered)**排列 + beamformer lattice |
+| **US 11,695,222 B2** | 核發 | Antenna Aperture in Phased Array Antenna Systems | 上案之核發專利 |
+| **US2019/0252796 A1** | 申請 | Antenna Modules for Phased Array Antennas | 相位陣列的天線模組化設計 |
+| **WO2017/123677 A1** | PCT | Methods and Apparatus for Manufacture and In-Space Assembly of Antennas | 天線製造與太空組裝方法 |
+
+**主張的技術優勢**:能效、頻寬、輕量化、**製造簡化**;對應「同時追蹤星座衛星與地面
+單元」的工程挑戰(陣列結構、訊號路由、波束成形/定向)。
+
+**相關但非 SpaceX 本體**
+- **US2024/0405420 A1**(Justia)— "Mechanism Type Antenna for Tracking Starlink Satellite":
+  第三方的**追星機構**申請,非 SpaceX。
+
+**查詢原文入口**
+- Google Patents(可看全文/圖式/同族/引用):
+  - https://patents.google.com/patent/US20190253125A1/en
+  - https://patents.google.com/patent/US20190252801A1/en
+  - https://patents.google.com/patent/US20190252796A1/en
+- USPTO 全文 PDF:
+  - US 11,146,323:https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11146323
+  - US 11,606,134:https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11606134
+  - US 11,695,222:https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11695222
+- 專利組合概覽:
+  - MaxVal — Featured Technologies: Starlink Constellation:https://www.maxval.com/blog/featured-technologies-starlink-constellation/
+  - GreyB — SpaceX Patents Insights & Stats:https://insights.greyb.com/spacex-patent/
+  - PatentPC — Role of Patents in SpaceX's Satellite Network:https://patentpc.com/blog/the-role-of-patents-in-spacexs-satellite-network-technology-success
+  - Justia Patents(依 assignee 搜尋 "Space Exploration Technologies")
+
+> 提醒:專利族持續更新,且「申請公開號」與「核發號」需分辨;精確權利範圍與最新
+> 法律狀態,請以 Google Patents / USPTO / 各國專利局原文為準。
+
+---
+
 *本文件為公開資料彙整,含第三方拆解之推定值;精確規格請以 SpaceX 官方與原始拆解/專利文件為準。*
